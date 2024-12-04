@@ -1,0 +1,209 @@
+/* Reseteo de estilos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f9f8f7;
+    font-family: 'Calibri', sans-serif;
+}
+
+/* Estilo del encabezado */
+header {
+    background: #682719;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+}
+
+img {
+    width: 140px;
+    height: 60px;
+    float: right;
+    padding: 8px;
+}
+
+nav {
+    float: left;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 40px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fffefe;
+    font-weight: bold;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #fffefe;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/* Estilo del contenido principal */
+.marcas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#nosotros {
+    background-color: cornsilk;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.titulo1 {
+    font-weight: bold;
+    color: #b3b3ff;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+}
+
+.titulo2 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Selector y botón */
+.selector-pago {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #b3b3ff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton-pago {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #682719;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-pago:hover {
+    background-color: #9c3a2b;
+}
+
+/* Estilo del pie de página */
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #FFFFFF;
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #f5f5f5;
+    transition: all .5s ease;
+}
+
+.social-link a:hover {
+    background-color: #00C3FF;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .selector-pago {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu img {
+        width: 80px;
+        height: 40px;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+        padding: 8px 0;
+    }
+}
